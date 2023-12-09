@@ -1,0 +1,14 @@
+<p>inicio works!</p>
+<!-- <p>{{dataInfo}}</p> -->
+<div>
+    <div class="form-floating">
+        <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <input type="email" class="form-control" name="email" id="exampleInputEmail1" [(ngModel)]="this.email">
+    </div>
+    <div class="form-floating">
+        <label for="exampleInputPassword1" class="form-label">Password</label>
+        <input type="password" class="form-control" name="pass" id="exampleInputPassword1" [(ngModel)]="this.pass">
+    </div>
+    <button type="button" class="btn btn-primary" id="boton" (click)="enviar()">Submit</button>
+    <h3>{{this.message}}</h3>
+</div>
